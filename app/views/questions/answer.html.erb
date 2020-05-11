@@ -1,0 +1,11 @@
+<h1> Stupid Coaching </h1>
+<%= @question %>
+<h2> -You </h2>
+<% if @question == "I am going to work"  %>
+        <%=  "Great!" %>
+    <% elsif @question.include? "?"%>
+       <%=  "Silly question, get dressed and go to work!" %>
+   <%  else%>
+        <%=  "I don't care, get dressed and go to work!" %>
+    <% end%>
+<p><a href="/ask">Ask a new question</a> </p>
